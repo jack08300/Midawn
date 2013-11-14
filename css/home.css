@@ -1,0 +1,143 @@
+body{
+	margin:0;
+	background-color:white;
+	font-family:Arial,Helvetica,sans-serif;
+}
+div, span{
+	border:1px solid transparent;
+}
+#container{
+	width:960px;
+	padding:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#header{
+	border-bottom:1px solid black;
+	height:30px;
+}
+#navigationBar{
+	border-bottom:1px solid black;
+	height:30px;
+}
+#naviArrow{
+	position:relative;
+	left:381px;
+	top:1px;
+}
+#main{
+	overflow:hidden;
+}
+#news{
+	height:330px;
+	width:554px;
+	margin-top:10px;
+	float:left;
+}
+#products{
+	height:330px;
+	width:400px;
+	margin-top:10px;
+	float:left;
+	
+}
+#aboutUs{
+	height:270px;
+	width:450px;
+	clear:both;
+	margin-top:10px;
+	float:left;
+}
+#gallery{
+	height:270px;
+	width:500px;
+	margin-top:10px;
+	float:left;
+}
+
+.labels{
+	text-align:center;
+	line-height:30px;
+	height:30px;
+	width:120px;
+	background-color:#fbcc02;
+	float:left;
+	font-size:12px;
+	font-weight:bold;
+}
+.labelsAboutUs{
+	background-color: black;
+	color:white;
+}
+.naviBar{
+	font-family:Arial,Helvetica,sans-serif;
+	line-height:30px;
+	margin-top:10px;
+	margin-left:50px;
+}
+.newsPics{
+	line-height:0px;
+	border-right:0;
+	height:auto;
+	width:auto;
+	float:left;
+}
+#productsWindow{
+	height:164px;
+	width:306px;
+	margin-left:50px;
+	margin-top:30px;
+}
+.productsPics{
+	float:left;
+	text-align:center;
+	//vertical-align: middle;
+	
+	color:#fbcc02;
+	background-color: black;
+}
+#productsLabel{
+	line-height:0px;
+	height:30px;
+	width:auto;
+	margin-left:50px;
+	margin-top:5px;
+}
+#productsContent{
+	height:90px;
+	width:300px;
+	margin-left:50px;
+	margin-top:5px;
+}
+#aboutUsLabel{
+	height:30px;
+	width:auto;
+	margin-left:3px;
+	margin-top:230px;
+}
+#galleryLabel{
+	height:30px;
+	width:auto;
+	margin-left:149px;
+	margin-top:10px;
+}
+#galleryWindow{
+	overflow: hidden;
+	height:220px;
+	width:460px;
+	margin-left:20px;
+	margin-top:5px;
+}
+.galleryPics{
+	line-height:0;
+	margin-left:2px;
+	height:auto;
+	width:auto;
+	float:left;
+	
+}
+.galleryPngs{
+	height:220px;
+	width:auto;
+	
+}
