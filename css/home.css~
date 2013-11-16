@@ -4,7 +4,7 @@ body{
 	font-family:Arial,Helvetica,sans-serif;
 }
 div, span{
-	border:2px solid transparent;
+	border:1px solid transparent;
 }
 #container{
 	width:960px;
@@ -122,12 +122,18 @@ div, span{
 	margin-top:10px;
 }
 #galleryWindow{
-	overflow: hidden;
+	overflow: auto;
 	height:220px;
 	width:460px;
 	margin-left:20px;
 	margin-top:5px;
 }
+#galleryTruck{
+	width:2000px; 
+	height:220px; 
+	//overflow:hidden;
+}
+
 .galleryPics{
 	line-height:0;
 	margin-left:2px;

@@ -128,6 +128,12 @@ div, span{
 	margin-left:20px;
 	margin-top:5px;
 }
+#galleryTruck{
+	width:2000px; 
+	height:220px; 
+	overflow:hidden;
+}
+
 .galleryPics{
 	line-height:0;
 	margin-left:2px;

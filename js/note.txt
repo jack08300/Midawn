@@ -1,0 +1,11 @@
+gallery:
+五秒換一下張
+總共五張
+->目標置中
+用目標的座標和window中點的座標差距來移動truck
+
+win
+pic
+truck
+
+五秒換一下張
