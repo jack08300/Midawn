@@ -55,5 +55,5 @@ function centerGallery(galleryPicID) {
 	var winCenter = winID.offset().left+(winWidth/2);
 	var distance = picCenter - winCenter;
 	var toGoPos = parseInt(truckID.css('marginLeft')) - distance;
-	truckID.animate({marginLeft:toGoPos+'px'},500); //try to make it move to "position" not by distance
+	truckID.animate({marginLeft:toGoPos+'px'},600); //try to make it move to "position" not by distance
 }

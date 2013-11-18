@@ -39,7 +39,7 @@ function hoverGallery(labelID,galleryID){
 	label
 		.mouseover(function(){
 			$('#galleryTruck').stop();
-			
+			$('#galleryLabel').children('.labels').css('backgroundColor','#fbcc02');
 			label.css('backgroundColor','black');
 			centerGallery(galleryID);
 		});

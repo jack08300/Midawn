@@ -9,3 +9,7 @@ pic
 truck
 
 五秒換一下張
+setInterval
+clearInterval
+setTimeout
+clearTimeout
