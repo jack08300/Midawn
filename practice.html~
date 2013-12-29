@@ -14,9 +14,8 @@
 			</div>
 			<div id="navigationBar">
 				<img id="naviArrow" src="pics/yarrow.png" height="15" width="15">
-				<span class="naviBar" style="margin-left:380px;">
-					
-					Home
+				<span class="naviBar" style="margin-left:380px;">	
+					<a href="">Home</a>
 				</span>
 				<span class="naviBar">
 					News
@@ -117,7 +116,7 @@
 					<div id="galleryWindow">
 						<div id = "galleryTruck">
 							<div id="galleryPic_1" class="galleryPics">
-								<img src="pics/gallery/05.jpg" class="galleryPngs" >
+								<img src="pics/gallery/01.jpg" class="galleryPngs" >
 							</div>
 							<div id="galleryPic_2" class="galleryPics">
 								<img src="pics/gallery/02.jpg" class="galleryPngs" >
