@@ -1,0 +1,37 @@
+body{
+	margin:0;
+	background-color:white;
+	font-family:Arial,Helvetica,sans-serif;
+}
+div, span{
+	border:1px solid gray;
+}
+#container{
+	width:960px;
+	padding:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#header{
+	border-bottom:1px solid black;
+	height:30px;
+}
+#navigationBar{
+	border-bottom:1px solid black;
+	height:30px;
+}
+.naviBar{
+	font-family:Arial,Helvetica,sans-serif;
+	line-height:30px;
+	margin-top:10px;
+	margin-left:50px;
+}
+#naviArrow{
+	position:relative;
+	left:381px;
+	top:1px;
+}
+#main{
+	height:625px;
+	overflow:hidden;
+}

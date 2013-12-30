@@ -1,33 +1,3 @@
-body{
-	margin:0;
-	background-color:white;
-	font-family:Arial,Helvetica,sans-serif;
-}
-div, span{
-	border:1px solid transparent;
-}
-#container{
-	width:960px;
-	padding:10px;
-	margin-left:auto;
-	margin-right:auto;
-}
-#header{
-	border-bottom:1px solid black;
-	height:30px;
-}
-#navigationBar{
-	border-bottom:1px solid black;
-	height:30px;
-}
-#naviArrow{
-	position:relative;
-	left:381px;
-	top:1px;
-}
-#main{
-	overflow:hidden;
-}
 #news{
 	height:330px;
 	width:554px;
@@ -68,12 +38,6 @@ div, span{
 .labelsAboutUs{
 	background-color: black;
 	color:white;
-}
-.naviBar{
-	font-family:Arial,Helvetica,sans-serif;
-	line-height:30px;
-	margin-top:10px;
-	margin-left:50px;
 }
 .newsPics{
 	line-height:0px;
