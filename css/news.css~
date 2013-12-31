@@ -1,0 +1,10 @@
+.filter{
+	height:150px;
+	width:250px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#filter_date{
+}
+#filter_category{
+}

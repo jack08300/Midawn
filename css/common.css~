@@ -32,6 +32,23 @@ div, span{
 	top:1px;
 }
 #main{
-	height:50px;
+	height:625px;
 	overflow:hidden;
+}
+/*the following is not for Home*/
+
+#sidebar{
+	height:600px;
+	width:280px;
+	float:left;
+	margin-top:10px;
+	margin-left:20px;
+}
+#content{
+	height:600px;
+	width:560px;
+	float:left;
+	margin-top:10px;
+	margin-left:20px;
+	overflow:auto;
 }

@@ -39,12 +39,6 @@
 	background-color: black;
 	color:white;
 }
-.naviBar{
-	font-family:Arial,Helvetica,sans-serif;
-	line-height:30px;
-	margin-top:10px;
-	margin-left:50px;
-}
 .newsPics{
 	line-height:0px;
 	border-right:0;
