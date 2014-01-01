@@ -1,8 +1,7 @@
 .filter{
 	height:150px;
 	width:250px;
-	margin-left:auto;
-	margin-right:auto;
+	margin:10px auto 0px;
 }
 #filter_date{
 }

@@ -1,0 +1,16 @@
+mysql>
+create database midawn;
+grant all privileges on midawn.* to "midawner"@"localhost" identified by "midawner";
+flush privileges; 
+
+
+table:
+md_news:
+#id 
+title
+author
+content
+timestamp
+date/time to show
+category
+

@@ -35,7 +35,7 @@
 			<div id="main">
 				<div id="sidebar">
 					<div id="filterDate" class="filter">
-						
+						<?php echo'phptest'; ?>
 					</div>
 					<div id="filterCategory" class="filter">
 					</div>
