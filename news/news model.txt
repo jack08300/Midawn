@@ -14,3 +14,12 @@ timestamp
 date/time to show
 category
 
+CREATE TABLE `midawn`.`md_news` (
+  `newsID` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(200) NULL,
+  `author` VARCHAR(100) NULL,
+  `content` TEXT NULL,
+  `createTime` TIMESTAMP NULL,
+  `updateTime` TIMESTAMP NULL,
+  `category` VARCHAR(100) NULL,
+  PRIMARY KEY (`newsID`));
