@@ -23,3 +23,11 @@ CREATE TABLE `midawn`.`md_news` (
   `updateTime` TIMESTAMP NULL,
   `category` VARCHAR(100) NULL,
   PRIMARY KEY (`newsID`));
+  
+ task: implement news
+ how?
+ databse set up: done
+ test php show database: done
+ test write into database through php page:
+     a page to convey through form:...
+ 
