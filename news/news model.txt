@@ -3,6 +3,8 @@ create database midawn;
 grant all privileges on midawn.* to "midawner"@"localhost" identified by "midawner";
 flush privileges; 
 
+notice: nl2br(), addslashes(), (stripslashes())
+Ipsum to generate sample article
 
 table:
 md_news:
@@ -29,5 +31,7 @@ CREATE TABLE `midawn`.`md_news` (
  databse set up: done
  test php show database: done
  test write into database through php page:
-     a page to convey through form:...
+     a page to convey through form: done
+     Produce data(about 20) , with limited authors(inwolf, Bri'an C, Raisive Crowx):
+     change date for filter test:
  

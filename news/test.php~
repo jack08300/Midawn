@@ -12,7 +12,7 @@ $result = mysqli_query($conn, "SELECT * FROM md_news");
 
 while($row = mysqli_fetch_array($result)){
 	echo $row['title']."<br>".$row['author'].str_repeat('&nbsp;', 5).date('M j, Y',strtotime($row['updateTime']));
-	echo "<br>".$row['category']."<br>".$row['content']."<br><br>";
+	echo "<br>".$row['content']."<br><br>";
 }
 	
 mysqli_close($conn);
