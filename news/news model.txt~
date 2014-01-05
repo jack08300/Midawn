@@ -32,6 +32,9 @@ CREATE TABLE `midawn`.`md_news` (
  test php show database: done
  test write into database through php page:
      a page to convey through form: done
-     Produce data(about 20) , with limited authors(inwolf, Brian C, Raisive Crowx):
-     change date for filter test:
+     Produce data(about 10) , with limited authors(inwolf, Bri'an C, Raisive Crowx): done
+     change date for filter test: done
+ A page with display function: 
+     Trim an article to limited summary
+     
  
