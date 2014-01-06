@@ -7,7 +7,7 @@
 		<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
 		<script src="js/home.js" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="css/common.css">
-		<link rel="stylesheet" type="text/css" href="css/news.css">
+		<link rel="stylesheet" type="text/css" href="css/aboutus.css">
 	</head>
 	<body>
 		<div id="container">
@@ -34,12 +34,10 @@
 			</div>
 			<div id="main">
 				<div id="sidebar">
-					<div id="filterDate" class="filter">
-						DATE<br>
+					<div id="subTitle">
+						<h2>ABOUT US</h2>
 					</div>
-					<div id="filterCategory" class="filter">
-						CATEGORY<br>
-					</div>
+					<div class="filter">
 				</div>
 				<div id="content">
 

@@ -34,6 +34,9 @@
 			</div>
 			<div id="main">
 				<div id="sidebar">
+					<div id="subTitle">
+						<h2>GALLERY</h2>
+					</div>
 					<div id="filterDate" class="filter">
 						DATE<br>
 					</div>

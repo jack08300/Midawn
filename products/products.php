@@ -34,15 +34,20 @@
 			</div>
 			<div id="main">
 				<div id="sidebar">
-					<div id="filterDate" class="filter">
-						DATE<br>
+					<div id="subTitle">
+						<h2>PRODUCTS</h2>
 					</div>
-					<div id="filterCategory" class="filter">
-						CATEGORY<br>
+					<a href="products/products.php">
+					<div class="filter">
+						<img class="sideIcon" src="pics/MyOutfitIcon.jpg">
+						<div class="sideTitle">MyOutfit</div>
 					</div>
+					</a>
 				</div>
 				<div id="content">
-
+					<img id="contentHeadPic" src="pics/MyOutfit.jpg">
+					<h1>MyOutfit</h1>
+					<h3>Coming sooooooooooooooon</h3>
 				</div>
 				<div id="rightBar">
 				</div>

@@ -52,7 +52,28 @@ a{
 #sidebar, #sidebar a{
 	color: #fbcc02;
 }
-
+#subTitle{
+	width:180px;
+	text-align:center;
+	margin:5px auto 0px;
+	border-bottom: 1px solid #fbcc02;
+}
+.filter{
+	width:180px;
+	margin:10px auto 0px;
+	//overflow:auto;
+}
+.sideIcon{
+	height:142px;
+	width:172px;
+	display:block;
+	border:4px solid #fbcc02;
+}
+.sideTitle{
+	width:178px;
+	text-align:center;
+	margin:3px auto 0px;
+}
 #content{
 	height:600px;
 	width:560px;
@@ -63,6 +84,7 @@ a{
 	//border-top: 1px solid black;
 	//border-bottom: 1px solid black;
 }
+
 #rightBar{
 	height:600px;
 	width:160px;

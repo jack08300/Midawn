@@ -34,11 +34,10 @@
 			</div>
 			<div id="main">
 				<div id="sidebar">
-					<div id="filterDate" class="filter">
-						DATE<br>
+					<div id="subTitle">
+						<h2>ABOUT US</h2>
 					</div>
-					<div id="filterCategory" class="filter">
-						CATEGORY<br>
+					<div class="filter">
 					</div>
 				</div>
 				<div id="content">

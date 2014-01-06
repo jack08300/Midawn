@@ -54,6 +54,9 @@ if(isset($_GET['mode'])) {
 			</div>
 			<div id="main">
 				<div id="sidebar">
+					<div id="subTitle">
+						<h2>NEWS</h2>
+					</div>
 					<div id="filterDate" class="filter">
 						DATE<br>
 						<?php
@@ -110,7 +113,7 @@ if(isset($_GET['mode'])) {
 				if($getMode!=4){
 					while($row = mysqli_fetch_array($result)){
 						echo '<div class="newsSummary">';
-						echo '<a href="'.$thisPage.'?mode=4&newsID='.$row['newsID'].'">'.$row['title'].'</a>';
+						echo '<a href="'.$thisPage.'?mode=4&newsID='.$row['newsID'].'"><strong>'.$row['title'].'</strong></a>';
 						echo "<br>".$row['author'].str_repeat('&nbsp;', 5);
 						echo date('M j, Y',strtotime($row['updateTime']));
 						echo "<br>".$row['category']."<br>";
@@ -121,15 +124,15 @@ if(isset($_GET['mode'])) {
 							$summary = substr($summary, 0, $summaryLen);
 							$summary = substr($summary,0, strrpos($summary," "));
 						}
-						echo $summary.'... (<a href="'.$thisPage.'?mode=4&newsID='.$row['newsID'].'">read more</a>)<br><br>';
+						echo $summary.'... (<a href="'.$thisPage.'?mode=4&newsID='.$row['newsID'].'"><em>read more</em></a>)<br><br>';
 						echo "</div>";
 					}
 				} 
 				// show single whole article part
 				else {
 					if($row = mysqli_fetch_array($result)) {
-						echo "<div>";
-						echo $row['title']."<br>".$row['author'].str_repeat('&nbsp;', 5);
+						echo "<div><strong>";
+						echo $row['title']."</strong><br>".$row['author'].str_repeat('&nbsp;', 5);
 						echo date('M j, Y',strtotime($row['updateTime']));
 						echo "<br>".$row['category']."<br>";
 						echo $row['content'];

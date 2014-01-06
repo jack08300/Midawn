@@ -1,17 +1,13 @@
 #naviArrow{
 	left:479px;
 }
-
-.filter{
-	height:150px;
-	width:180px;
-	margin:10px auto 0px;
-	overflow:auto;
-}
 #filterDate{
 	height:250px;
+	overflow:auto;
 }
 #filterCategory{
+	height:150px;
+	overflow:auto;
 }
 .newsSummary{
 	border-top: 1px solid gray;
