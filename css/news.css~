@@ -1,6 +1,6 @@
 .filter{
 	height:150px;
-	width:250px;
+	width:180px;
 	margin:10px auto 0px;
 	overflow:auto;
 }
@@ -8,4 +8,7 @@
 	height:250px;
 }
 #filterCategory{
+}
+.newsSummary{
+	border-top: 1px solid gray;
 }

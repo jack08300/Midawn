@@ -41,5 +41,6 @@ CREATE TABLE `midawn`.`md_news` (
      			fetch month and date: done
      			fetch category: done
      		Enable filter: done
-     	Title and Read More into single post : done
+     Title and Read More into single post : done
+     
  

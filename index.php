@@ -17,19 +17,19 @@
 			<div id="navigationBar">
 				<img id="naviArrow" src="pics/yarrow.png" height="15" width="15">
 				<span class="naviBar" style="margin-left:380px;">	
-					<a href="index.html">Home</a>
+					<a href="index.php">Home</a>
 				</span>
 				<span class="naviBar">
 					<a href="news/news.php">News</a>
 				</span>
 				<span class="naviBar">
-					<a href="products/products.html">Products</a>
+					<a href="products/products.php">Products</a>
 				</span>
 				<span class="naviBar">
-					<a href="aboutus/aboutus.html">About Us</a>
+					<a href="aboutus/aboutus.php">About Us</a>
 				</span>
 				<span class="naviBar">
-					<a href="gallery/gallery.html">Gallery</a>
+					<a href="gallery/gallery.php">Gallery</a>
 				</span>
 			</div>
 			<div id="main">
