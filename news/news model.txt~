@@ -28,13 +28,17 @@ CREATE TABLE `midawn`.`md_news` (
   
  task: implement news
  how?
- databse set up: done
+ database set up: done
  test php show database: done
- test write into database through php page:
+ test write into database through php page: done
      a page to convey through form: done
      Produce data(about 10) , with limited authors(inwolf, Bri'an C, Raisive Crowx): done
      change date for filter test: done
  A page with display function: 
-     Trim an article to limited summary
-     
+     Trim an article to limited summary: done
+     Sidebar with filter function:
+         Display filter: done
+     			fetch month and date: done
+     			fetch category: done
+     		Enable filter: done
  

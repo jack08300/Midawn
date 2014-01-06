@@ -42,7 +42,7 @@ div, span{
 	width:280px;
 	float:left;
 	margin-top:10px;
-	margin-left:20px;
+	margin-left:40px;
 }
 #content{
 	height:600px;

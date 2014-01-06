@@ -10,7 +10,7 @@ if(mysqli_connect_errno()){
 }
 //set this page name
 $thisPage = "news/testFilter.php";
-//check GET
+//echo $_GET['mode'];
 $getMode = 0;
 if(isset($_GET['mode'])) {
 	$getMode = $_GET['mode'];
@@ -43,7 +43,7 @@ if(isset($_GET['mode'])) {
 					<a href="index.html">Home</a>
 				</span>
 				<span class="naviBar">
-					<a href="news/news.php">News</a>
+					<a href="news/news.html">News</a>
 				</span>
 				<span class="naviBar">
 					<a href="products/products.html">Products</a>
