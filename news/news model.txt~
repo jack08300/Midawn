@@ -6,6 +6,9 @@ flush privileges;
 notice: nl2br(), addslashes(), (stripslashes())
 Ipsum to generate sample article
 
+
+NEWS
+
 table:
 md_news:
 #id 
@@ -41,5 +44,20 @@ CREATE TABLE `midawn`.`md_news` (
      			fetch month and date: done
      			fetch category: done
      		Enable filter: done
-     	Title and Read More into single post : done
- 
+     Title and Read More into single post : done
+     misc: done
+
+
+About US
+     
+ CREATE TABLE `midawn`.`md_about` (
+  `aboutID` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NULL,
+  `detail` TEXT NULL,
+  `codename` VARCHAR(10) NULL,
+  `category` VARCHAR(45) NULL,
+  `icon` VARCHAR(100) NULL,
+  `picture` VARCHAR(100) NULL,
+  `timestamp` TIMESTAMP NOT NULL DEFAULT NOW(),
+  `joinDate` DATE NULL,
+  PRIMARY KEY (`aboutID`));

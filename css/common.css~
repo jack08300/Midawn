@@ -4,7 +4,7 @@ body{
 	font-family:Arial,Helvetica,sans-serif;
 }
 div, span{
-	border:1px solid transparent;
+	border:1px solid red;
 }
 a{
 	text-decoration:none;
@@ -84,11 +84,7 @@ a{
 	//border-top: 1px solid black;
 	//border-bottom: 1px solid black;
 }
-#contentHeadPic{
-	width:540px;
-	display:block;
-	margin:3px auto 0px;
-}
+
 #rightBar{
 	height:600px;
 	width:160px;

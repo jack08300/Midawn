@@ -1,3 +1,23 @@
+<?php
+//load db data
+require('../config.php');
+$conn = mysqli_connect($dbhost, $dbuser, $dbpw, $dbname);
+if(mysqli_connect_errno()){
+	echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+//set this page name
+$thisPage = "aboutus/aboutus.php";
+//check GET
+$getMode = 0;
+if(isset($_GET['mode'])) {
+	$getMode = $_GET['mode'];
+	if(isset($_GET['year'])) $getYear = $_GET['year'];
+	if(isset($_GET['month'])) $getMonth = $_GET['month'];
+	if(isset($_GET['category'])) $getCategory = $_GET['category'];
+	if(isset($_GET['newsID'])) $getId = $_GET['newsID'];
+}
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -38,6 +58,25 @@
 						<h2>ABOUT US</h2>
 					</div>
 					<div class="filter">
+						<a href="aboutus/aboutus.php">
+						<img class="sideIcon" src="pics/crews/MidawnIcon.png">
+						<div class="sideTitle">MiDawn</div>
+						</a>
+					</div>
+					<div class="filter">
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMEMBERS&nbsp&nbsp<br>
+						<?php
+						$sql = "SELECT name, codename FROM md_about WHERE category='member'";
+						$result = mysqli_query($conn, $sql);
+						while($row = mysqli_fetch_array($result)){
+							$name = $row['name'];
+							$codename = $row['codename'];
+							echo str_repeat("&nbsp", 16);
+							echo $name;
+							echo "<br>";
+						}
+						?>
+					</div>
 				</div>
 				<div id="content">
 
@@ -48,3 +87,5 @@
 		</div>
 	</body>
 </html>
+
+<?php mysqli_close($conn); ?>

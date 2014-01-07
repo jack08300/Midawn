@@ -1,3 +1,20 @@
 #naviArrow{
 	left:691px;
 }
+.bigPicture{
+	display:block;
+	height:390px;
+	width:520px;
+	//float:left;
+	//margin-top:5px;
+	margin:5px auto 0px;
+}
+.smallPicture{
+	height:180px;
+	width:180px;
+	float:left;
+	//background-color:blue;
+	border:5px solid #fbcc02;
+	margin:8px;
+	box-shadow:2px 2px 3px #aaaaaa;
+}

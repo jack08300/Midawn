@@ -1,3 +1,20 @@
+<?php
+//load db data
+require('../config.php');
+$conn = mysqli_connect($dbhost, $dbuser, $dbpw, $dbname);
+if(mysqli_connect_errno()){
+	echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+//set this page name
+$thisPage = "aboutus/aboutus.php";
+//check GET
+$getMode = 0;
+if(isset($_GET['mode'])) {
+	$getMode = $_GET['mode'];
+	if(isset($_GET['codename'])) $getCodename = $_GET['codename'];
+}
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -38,10 +55,56 @@
 						<h2>ABOUT US</h2>
 					</div>
 					<div class="filter">
+						<a href="aboutus/aboutus.php">
+						<img class="sideIcon" src="pics/crews/MidawnIcon.png">
+						<div class="sideTitle">MiDawn</div>
+						</a>
+					</div>
+					<div class="filter">
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp MEMBERS<br>
+						<?php
+						$sql = "SELECT name, codename FROM md_about WHERE category='member'";
+						$result = mysqli_query($conn, $sql);
+						while($row = mysqli_fetch_array($result)){
+							$name = $row['name'];
+							$codename = $row['codename'];
+							echo str_repeat("&nbsp", 16);
+							$thisPagee="text";
+							echo "<a href=\"".$thisPage."?mode=1&codename=".$codename."\">";
+							echo $name."</a>";
+							echo "<br>";
+						}
+						?>
 					</div>
 				</div>
 				<div id="content">
-
+					<?php
+					if($getMode != 1) {
+						$sql = "SELECT name, detail, picture FROM md_about WHERE aboutID=1";
+						$result = mysqli_query($conn, $sql);
+						if($row = mysqli_fetch_array($result)) {
+							$name = $row['name'];
+							$detail = $row['detail'];
+							$picture = $row['picture'];
+						}
+						echo "<h1>".$name."</h1>";
+						echo "<p>".$detail."</p>";
+						echo "<img class=\"bigPicture\" src=\"".$picture."\">";
+					} else {
+						$sql = "SELECT name, position, detail, icon FROM md_about WHERE codename='".$getCodename."'";
+						$result = mysqli_query($conn, $sql);
+						if($row = mysqli_fetch_array($result)) {
+							$name = $row['name'];
+							$position = $row['position'];
+							$detail = $row['detail'];
+							$icon = $row['icon'];
+						}
+						echo '<img class="smallPicture" src="'.$icon.'">';
+						echo "<h1>".$name."</h1>";
+						echo "<h2>".$position."</h2>";
+						echo "<p>".$detail."</p>";
+					}
+					?>
 				</div>
 				<div id="rightBar">
 				</div>
@@ -49,3 +112,5 @@
 		</div>
 	</body>
 </html>
+
+<?php mysqli_close($conn); ?>
