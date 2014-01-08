@@ -35,7 +35,7 @@
 			<div id="main">
 				<div id="news">
 					<div id="newsLabels" style="float:right; margin-right:35px">
-						<img src="pics/newsLabel.png" height="30" width="80" style="float:right;">
+						<a href="news/news.php"><img src="pics/newsLabel.png" height="30" width="80" style="float:right;"></a>
 						<img src="pics/newsLabel_1.png" height="30" width="27" style="float:right; margin-right:2px;">
 						<img src="pics/newsLabel_4.png" height="30" width="27" style="float:right; margin-right:2px;">
 					</div>
@@ -73,13 +73,15 @@
 					</div>
 					<div style="height:18px;float:left; clear:both">
 						<img src="pics/yarrow.png" height="15" width="15" style="float:left; margin-left:15px;">
-						<span style="line-height:15px;margin-left:1px;float:left"><a href="news/news.html">Read more...</a></span>
+						<span style="line-height:15px;margin-left:1px;float:left"><a href="news/news.php">Read more...</a></span>
 					</div>
 					
 				</div>
 				<div id="products">
 					<div id="productsWindow">
+						<a href="products/products.php">
 						<div class="productsPics" style="width:100px; height:110px; background-color:#fbcc02;color:black; line-height:110px">MyOutfit</div>
+						</a>
 						<div class="productsPics" style="width:150px; height:110px; line-height:110px">?</div>
 						<div class="productsPics" style="width:50px; height:110px; line-height:110px">?</div>
 						<div class="productsPics" style="width:50px; height:50px; line-height:50px">?</div>
@@ -87,9 +89,9 @@
 						<div class="productsPics" style="width:50px; height:50px; line-height:50px">?</div>
 					</div>
 					<div id="productsLabel">
-						<span class="labels">
+						<a href="products/products.php"><span class="labels">
 							PRODUCTS
-						</span>
+						</span></a>
 						<span class="labels" style="width:25px; margin-left:1px"></span>
 					</div>
 					<div id="productsContent" style="font-size:small; text-align:justify">
@@ -99,11 +101,21 @@
 				</div>
 				<div id="aboutUs">
 					<div id="aboutUsLabel">
-						<span class="labels labelsAboutUs">ABOUT US</span>
-						<span id="wei" class="labels labelsAboutUs" style="width:20px; margin-left:1px"></span>
-						<span id="jay" class="labels labelsAboutUs" style="width:20px; margin-left:1px"></span>
-						<span id="iris" class="labels labelsAboutUs" style="width:20px; margin-left:1px"></span>
-						<span id="brian" class="labels labelsAboutUs" style="width:20px; margin-left:1px"></span>
+						<a href="aboutus/aboutus.php">
+							<span class="labels labelsAboutUs">ABOUT US</span>
+						</a>
+						<a href="aboutus/aboutus.php?mode=1&codename=W">
+							<span id="wei" class="labels labelsAboutUs" style="width:20px; margin-left:1px"></span>
+						</a>
+						<a href="aboutus/aboutus.php?mode=1&codename=J">
+							<span id="jay" class="labels labelsAboutUs" style="width:20px; margin-left:1px"></span>
+						</a>
+						<a href="aboutus/aboutus.php?mode=1&codename=I">
+							<span id="iris" class="labels labelsAboutUs" style="width:20px; margin-left:1px"></span>
+						</a>
+						<a href="aboutus/aboutus.php?mode=1&codename=B">
+							<span id="brian" class="labels labelsAboutUs" style="width:20px; margin-left:1px"></span>
+						</a>
 					</div>
 				</div>
 				<div id="gallery">
@@ -113,7 +125,9 @@
 						<span id="galleryLabel_3" class="labels" style="width:20px; margin-left:1px"></span>
 						<span id="galleryLabel_4" class="labels" style="width:20px; margin-left:1px"></span>
 						<span id="galleryLabel_5" class="labels" style="width:20px; margin-left:1px"></span>
-						<span class="labels" style="margin-left:1px">GALLERY</span>						
+						<a href="gallery/gallery.php">
+							<span class="labels" style="margin-left:1px">GALLERY</span>	
+						</a>
 					</div>
 					<div id="galleryWindow">
 						<div id = "galleryTruck">

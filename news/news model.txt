@@ -65,3 +65,15 @@ About US
   ALTER TABLE `midawn`.`md_about` 
   CHANGE COLUMN `codename` `codename` VARCHAR(10) NULL AFTER `name`,
   ADD COLUMN `position` VARCHAR(100) NULL AFTER `codename`;
+  
+Gallery
+
+CREATE TABLE `midawn`.`md_gallery` (
+  `galleryID` INT NOT NULL AUTO_INCREMENT,
+  `description` VARCHAR(400) NULL,
+  `category` VARCHAR(45) NULL,
+  `location` VARCHAR(100) NULL,
+  `timestamp` TIMESTAMP NULL DEFAULT NOW(),
+  `pictureDate` DATE NULL,
+  PRIMARY KEY (`galleryID`));
+

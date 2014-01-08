@@ -1,11 +1,13 @@
 $(document).ready(function(){
-	setAboutUs();
-	setGallery();
-	$(".galleryPics").click(function(){centerGallery(this);});
+	setHomeAboutUs();
+	setHomeGallery();
+	setGalleryFullPicture();
 });
 
+
+//Home------------------------------------------------------------------------------------
 //Set About Us with crew pictures
-function setAboutUs(){
+function setHomeAboutUs(){
 	hoverAboutUs("#wei","pics/crews/W.png");
 	hoverAboutUs("#jay","pics/crews/J.png");
 	hoverAboutUs("#iris","pics/crews/I.png");
@@ -26,13 +28,12 @@ function hoverAboutUs(crewID, crewURL){
 }
 
 //set gallery label and pictures
-function setGallery(){
+function setHomeGallery(){
 	//centerGallery("#galleryPic_1");
-	hoverGallery("#galleryLabel_1","#galleryPic_1");
-	hoverGallery("#galleryLabel_2","#galleryPic_2");
-	hoverGallery("#galleryLabel_3","#galleryPic_3");
-	hoverGallery("#galleryLabel_4","#galleryPic_4");
-	hoverGallery("#galleryLabel_5","#galleryPic_5");
+	var galleryA = [["#galleryLabel_1","#galleryPic_1"],["#galleryLabel_2","#galleryPic_2"],["#galleryLabel_3","#galleryPic_3"],["#galleryLabel_4","#galleryPic_4"],["#galleryLabel_5","#galleryPic_5"]];
+	for(var i=0;i<5;i++){
+		hoverGallery(galleryA[i][0],galleryA[i][1]);
+	}
 }
 function hoverGallery(labelID,galleryID){
 	var label = $(labelID);
@@ -43,9 +44,17 @@ function hoverGallery(labelID,galleryID){
 			label.css('backgroundColor','black');
 			centerGallery(galleryID);
 		});
+	$(galleryID)
+		.click(function(){
+			$('#galleryTruck').stop();
+			$('#galleryLabel').children('.labels').css('backgroundColor','#fbcc02');
+			label.css('backgroundColor','black');
+			centerGallery(this);
+		});
 }
 function centerGallery(galleryPicID) {
 	var picID = $(galleryPicID);
+	//alert(picID + " " + galleryPicID);
 	var picWidth = picID.width();
 	var truckID = $("#galleryTruck");
 	var winID = $("#galleryWindow");
@@ -56,4 +65,18 @@ function centerGallery(galleryPicID) {
 	var distance = picCenter - winCenter;
 	var toGoPos = parseInt(truckID.css('marginLeft')) - distance;
 	truckID.animate({marginLeft:toGoPos+'px'},600); //try to make it move to "position" not by distance
+}
+
+//Gallery------------------------------------------------------------------------------
+function setGalleryFullPicture() {
+	$(".miniPicture").click(function(){
+		var fullAddress = $(this).attr("fullPic");
+		$("#fullPicture").attr("src",fullAddress);
+		$("#smokeScreen").css("visibility","visible");
+		$("#fullBody").css("visibility","visible");
+		});
+	$("#fullBody").click(function(){
+		$("#smokeScreen").css("visibility","hidden");
+		$("#fullBody").css("visibility","hidden");
+	});
 }

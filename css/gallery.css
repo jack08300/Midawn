@@ -1,3 +1,90 @@
 #naviArrow{
 	left:812px;
 }
+
+#smokeScreen{
+	position:absolute;
+	z-index:1;
+	opacity:0.7;
+	width:100%;
+	height:100%;
+	background-color:black;
+	left:0;
+	top:0;
+	border:0;
+	visibility:hidden;
+}
+#fullBody{
+	position:absolute;
+	z-index:2;
+	opacity:1;
+	width:100%;
+	height:100%;
+	//background-color:blue;
+	top:0;
+	margin:0 auto 0;
+	border:0;
+	visibility:hidden;
+}
+#fullContainer{
+	position:relative;
+	display:table;
+	width:960px;
+	height:691px;
+	//background-color:purple;
+	margin:10px auto 10px;
+	border:0;
+}
+#fullPicBlock{
+	position:relative;
+	display:table-cell;
+	vertical-align:middle;
+	//width:640px;
+	//height:480px;
+	margin:0px auto 0px;
+	//background-color:green;
+
+}
+#fullPicture{
+	display:block;
+	max-width:720px;
+	max-height:600px;
+	//float:left;
+	//margin-top:5px;
+	border:5px solid #fbcc02;
+	box-shadow:2px 2px 3px #aaaaaa;
+	margin:0px auto 0px;
+}
+
+.miniPicBlock{
+	height:172px;
+	width:172px;
+	float:left;
+	display:table;
+	//background-color:black;
+	//border:1px solid red;
+	margin:2px;
+}
+.miniPicCell{
+// to make inner picture in to table cell and vertical align;
+	display:table-cell;
+	vertical-align:middle;
+	border:0px;
+	//background-color:pink;
+}
+.miniPicture{
+	max-height:150px;
+	max-width:150px;
+	display:block;
+	//display:table-cell;
+	//vertical-align:middle;
+	//line-height:170px;
+	//background-color:black;
+	border:1px solid #fbcc02;
+	box-shadow:2px 2px 3px #aaaaaa;
+	margin:0px auto 0px;
+}
+.miniPicture:hover{
+	max-height:170px;
+	max-width:170px;
+}
