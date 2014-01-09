@@ -32,7 +32,7 @@ if(isset($_GET['mode'])) {
 	<body>
 		<div id="container">
 			<div id="header">
-				<img src="pics/midawnLogo.png" height="30" width="172">
+				<a href="index.php"><img src="pics/midawnLogo.png" height="30" width="172"></a>
 			</div>
 			<div id="navigationBar">
 				<img id="naviArrow" src="pics/yarrow.png" height="15" width="15">

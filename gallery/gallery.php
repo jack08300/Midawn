@@ -29,7 +29,7 @@ if(isset($_GET['mode'])) {
 	<body>
 		<div id="container">
 			<div id="header">
-				<img src="pics/midawnLogo.png" height="30" width="172">
+				<a href="index.php"><img src="pics/midawnLogo.png" height="30" width="172"></a>
 			</div>
 			<div id="navigationBar">
 				<img id="naviArrow" src="pics/yarrow.png" height="15" width="15">
@@ -60,29 +60,29 @@ if(isset($_GET['mode'])) {
 				</div>
 				<div id="content">
 					<div class = "miniPicBlock"><div class="miniPicCell">
-					<img class = "miniPicture" fullPic= "pics/gallery/01.jpg" src="pics/gallery/01.jpg"></div></div>
+					<img class = "miniPicture" fullPic = "pics/gallery/01.jpg" src="pics/gallery/01.jpg"></div></div>
 					<div class = "miniPicBlock"><div class="miniPicCell">
-					<img class = "miniPicture" fullPic= "pics/gallery/02.jpg" src="pics/gallery/02.jpg"></div></div>
+					<img class = "miniPicture" fullPic = "pics/gallery/02.jpg" src="pics/gallery/02.jpg"></div></div>
 					<div class = "miniPicBlock"><div class="miniPicCell">
-					<img class = "miniPicture" src="pics/gallery/03.jpg"></div></div>
+					<img class = "miniPicture" fullPic = "pics/gallery/03.jpg" src="pics/gallery/03.jpg"></div></div>
 					<div class = "miniPicBlock"><div class="miniPicCell">
-					<img class = "miniPicture" src="pics/gallery/04.jpg"></div></div>
+					<img class = "miniPicture" fullPic = "pics/gallery/04.jpg" src="pics/gallery/04.jpg"></div></div>
 					<div class = "miniPicBlock"><div class="miniPicCell">
-					<img class = "miniPicture" src="pics/gallery/05.jpg"></div></div>
+					<img class = "miniPicture" fullPic = "pics/gallery/05.jpg" src="pics/gallery/05.jpg"></div></div>
 					<div class = "miniPicBlock"><div class="miniPicCell">
-					<img class = "miniPicture" src="pics/gallery/Daily/01.jpg"></div></div>
+					<img class = "miniPicture" fullPic = "pics/gallery/Daily/01.JPG" src="pics/gallery/Daily/01.JPG"></div></div>
 					<div class = "miniPicBlock"><div class="miniPicCell">
-					<img class = "miniPicture" src="pics/gallery/NewOrleans/1.jpg"></div></div>
+					<img class = "miniPicture" fullPic = "pics/gallery/NewOrleans/1.JPG" src="pics/gallery/NewOrleans/1.JPG"></div></div>
 					<div class = "miniPicBlock"><div class="miniPicCell">
-					<img class = "miniPicture" src="pics/gallery/NewOrleans/2.jpg"></div></div>
+					<img class = "miniPicture" fullPic = "pics/gallery/NewOrleans/2.JPG" src="pics/gallery/NewOrleans/2.JPG"></div></div>
 					<div class = "miniPicBlock"><div class="miniPicCell">
-					<img class = "miniPicture" src="pics/gallery/NewOrleans/3.jpg"></div></div>
+					<img class = "miniPicture" fullPic = "pics/gallery/NewOrleans/3.JPG" src="pics/gallery/NewOrleans/3.JPG"></div></div>
 					<div class = "miniPicBlock"><div class="miniPicCell">
-					<img class = "miniPicture" src="pics/gallery/NewOrleans/4.jpg"></div></div>
+					<img class = "miniPicture" fullPic = "pics/gallery/NewOrleans/4.JPG" src="pics/gallery/NewOrleans/4.JPG"></div></div>
 					<div class = "miniPicBlock"><div class="miniPicCell">
-					<img class = "miniPicture" src="pics/gallery/NewOrleans/5.jpg"></div></div>
+					<img class = "miniPicture" fullPic = "pics/gallery/NewOrleans/5.JPG" src="pics/gallery/NewOrleans/5.JPG"></div></div>
 					<div class = "miniPicBlock"><div class="miniPicCell">
-					<img class = "miniPicture" src="pics/gallery/NewOrleans/6.jpg"></div></div>
+					<img class = "miniPicture" fullPic = "pics/gallery/NewOrleans/6.JPG" src="pics/gallery/NewOrleans/6.JPG"></div></div>
 				</div>
 				<div id="rightBar">
 				</div>
@@ -92,7 +92,7 @@ if(isset($_GET['mode'])) {
 		<div id="fullBody">
 			<div id="fullContainer">
 				<div id="fullPicBlock">
-					<img id = "fullPicture" src="pics/gallery/NewOrleans/1.jpg">
+					<img id = "fullPicture" src=" ">
 				</div>
 			</div>
 		</div>

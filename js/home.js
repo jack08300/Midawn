@@ -1,10 +1,24 @@
 $(document).ready(function(){
+	setNaviBar();
 	setHomeAboutUs();
 	setHomeGallery();
 	setGalleryFullPicture();
 });
 
-
+//Common---------------------------------------------------------------------------
+function setNaviBar(){
+	var arrowPosition = [381, 479, 574, 691, 812];
+	var currentPosition = 0;
+	$(".naviBar")
+		.mouseenter(function(){
+			currentPosition = parseInt($("#naviArrow").css("left"));
+			
+			//$("#naviArrow").animate({marginLeft:toGoPos+'px'},600);
+		})
+		.mouseleave(function(){
+			$("#naviArrow").animate({left:currentPosition+'px'},600);
+		});
+}
 //Home------------------------------------------------------------------------------------
 //Set About Us with crew pictures
 function setHomeAboutUs(){
