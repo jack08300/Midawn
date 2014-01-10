@@ -1,3 +1,7 @@
+#naviArrow{
+	left:381px;
+}
+
 #news{
 	height:330px;
 	width:554px;
@@ -56,7 +60,7 @@
 	float:left;
 	text-align:center;
 	//vertical-align: middle;
-	
+	border:1px solid white;
 	color:#fbcc02;
 	background-color: black;
 }
